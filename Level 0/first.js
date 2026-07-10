@@ -2,8 +2,8 @@
 
 console.log("Hello , Jayam srivastava")
 // Variable declaration- these are containers that store values
-// var x = 10
-// console.log(x + 30)
+var x = 10
+console.log(x + 30)
 // Rules for variable
 // It should contain unique character , it treats "a"& "A" differently.
 // use camel case -firstName , lastName
@@ -19,23 +19,43 @@ console.log(name)
 const PI = 3.14;
 console.log(PI)
 // let can be initialize later but not the const 
+// Operators in jS
+let ax = 10
+let y = 30
+console.log("X+Y = ", ax + y)
+console.log(ax * y)
+console.log(ax / y)
+console.log(ax - y)
+console.log(ax % y)
+console.log(ax ** y)
 
-// Data Types
-// number, string, boolean, null, undefined , symbol , BigInt
-// typeof data_type tells the type 
+// Unary operators
+let a = 10
+console.log(a++) // 10
+console.log(++a) // 11
 
-let age = 24;
-let isFollow = true;
-let x = null;
-let names = BigInt(56);
+// assigment operator 
 
-// Non - primitive 
-const Student = {
-    Name: "hrx01-dev",
-    age: 18,
-    Course: "Btech",
-    CGPA: 8.5,
+let cd = 5
+cd += 4
+console.log(cd)
 
+// Compare operators
+// types : equal to , not equal to , equal & type etc ...
+let A = 10;
+let B = 30;
 
-}
-console.log(Student.age)
+console.log(A == B)
+console.log(A != B)
+console.log(A === B)
+console.log(A !== B)
+
+// Logical operator 
+
+let F = 5;
+let G = 10;
+let H = 20;
+let I = 20;
+console.log(F != G || H > I)
+console.log(F != G && H > I)
+console.log(!(F != I))
