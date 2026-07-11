@@ -59,3 +59,22 @@ let I = 20;
 console.log(F != G || H > I)
 console.log(F != G && H > I)
 console.log(!(F != I))
+
+// Conditional operator 
+let age = 18;
+if (age == 18) {
+    console.log("You can apply for vote but not legally Drive")
+}
+else if (age > 18) {
+    console.log("You can apply for vote and legally Drive")
+}
+else {
+    console.log("You cannot apply for vote and legally Drive")
+}
+// Ternary operator 
+let aged = 25;
+let result = aged >= 18 ? "Adult" : "Minor";
+console.log(result);
+// how to take input
+Years = prompt("Enter your age");
+console.log(Years)
