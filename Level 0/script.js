@@ -78,3 +78,29 @@ console.log(result);
 // how to take input
 Years = prompt("Enter your age");
 console.log(Years)
+// loops 
+// for (let i = 0; i <= 5; i++) {
+//     console.log(i)
+// }
+//
+// while loops
+i = 0;
+while (i <= 10) {
+    console.log(i)
+    i++
+}
+// for - of loop
+let str = "jayam srivastava"
+for (let i of str) {
+    console.log(i);
+}
+// for-in loop
+let students = {
+    name: "jayam",
+    age: 20,
+    cgpa: 8.9,
+
+}
+for (let key in students) {
+    console.log(key, students[key])
+}
