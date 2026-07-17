@@ -76,8 +76,8 @@ let aged = 25;
 let result = aged >= 18 ? "Adult" : "Minor";
 console.log(result);
 // how to take input
-Years = prompt("Enter your age");
-console.log(Years)
+// Years = prompt("Enter your age");
+// console.log(Years)
 // loops 
 // for (let i = 0; i <= 5; i++) {
 //     console.log(i)
@@ -104,3 +104,25 @@ let students = {
 for (let key in students) {
     console.log(key, students[key])
 }
+// String in JS
+let str1 = "jayam";
+console.log(str1.length)
+// indexing starts from 0 
+console.log(str1[2])
+// template literal
+let temp = `this is a template literal ${str1}`
+console.log(temp)
+// string methods 
+str1.toUpperCase()
+console.log(str1)
+str1.toLowerCase()
+str1.trim()
+str1.slice(1, 3) // the start value is included and end value is excluded 
+console.log(str1.replace("jayam", "hello"))
+
+str1.charAt(3)
+console.log(str1.split(" "))
+console.log(str1.slice(1, 3))
+let str2 = "Srivastava";
+console.log(str1.concat(str2)) // you can also do str1+str2 for joining 
+console.log(str1.replace("ya", "la"))
