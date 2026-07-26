@@ -79,3 +79,10 @@ const red = ARR.reduce((res, curr) => {
     return res + curr
 }, ini)
 console.log(red)
+console.log(alert("Hello World"))
+
+// window object - it is browser's object not javascript's automatically created by browser
+alert("hello")
+// What is DOM ?
+// when a webpage is loaded it creates  a dom , atree like  structure 
+console.dir(window.document.body);
