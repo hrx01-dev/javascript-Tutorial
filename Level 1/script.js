@@ -86,3 +86,24 @@ alert("hello")
 // What is DOM ?
 // when a webpage is loaded it creates  a dom , atree like  structure 
 console.dir(window.document.body);
+// DOM manipulations
+console.log(document.getElementbyId("b1"))
+console.log(document.getElementsByClassName("para"))
+console.log(document.querySelector("para"))  // This  will give the first element matching that class
+console.log(document.querySelectorAll("para"))  // This  will give the all elements matching that class as list
+// Properties
+// tagName - returns the tagname for that node
+console.log(document.querySelector(p).tagName)
+// innerHTML -  retuns the html content of the element 
+console.log(document.querySelector("para").innerHTML)
+console.log(document.querySelector("para").firstChild)
+console.log(document.querySelector("para").lastChild)
+// innerText - Returns the visible text content of the element
+console.log(document.querySelector("para").innerText)
+document.querySelector("para").innerText = "new text";
+// inner Content - Returns the text content of the element and its children
+console.log(document.querySelector("para").textContent)
+document.querySelector("para").textContent = "new text";
+
+
+
