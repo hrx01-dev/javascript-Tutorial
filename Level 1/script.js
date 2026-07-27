@@ -87,10 +87,10 @@ alert("hello")
 // when a webpage is loaded it creates  a dom , atree like  structure 
 console.dir(window.document.body);
 // DOM manipulations
-console.log(document.getElementbyId("b1"))
-console.log(document.getElementsByClassName("para"))
-console.log(document.querySelector("para"))  // This  will give the first element matching that class
-console.log(document.querySelectorAll("para"))  // This  will give the all elements matching that class as list
+// console.log(document.getElementbyId("b1"))
+// console.log(document.getElementsByClassName("para"))
+// console.log(document.querySelector("para"))  // This  will give the first element matching that class
+// console.log(document.querySelectorAll("para"))  // This  will give the all elements matching that class as list
 // Properties
 // tagName - returns the tagname for that node
 console.log(document.querySelector(p).tagName)
@@ -104,6 +104,29 @@ document.querySelector("para").innerText = "new text";
 // inner Content - Returns the text content of the element and its children
 console.log(document.querySelector("para").textContent)
 document.querySelector("para").textContent = "new text";
+// Attributes - id , classes
 
+let para = document.querySelector(".para");
+let attr = para.getAttribute("class");
+console.log(attr)
+console.log(para.setAttribute("class", "para1"));
 
+let div = document.body.querySelector("div");
+console.log(div.style)
+div.style.backgroundColor = "yellow"
 
+let btn = document.createElement("button")
+btn.innerText = "click me";
+console.log(btn)
+document.body.appendChild(btn)    // end at the end of node 
+document.body.prepend(btn)   // at the begining of node
+console.log(btn.parentElement)
+document.body.before(btn)  // before the body
+document.body.after(btn)   // after the body
+document.body.remove(btn)   // remove the node
+//Class list properties
+console.log(para.classList)
+console.log(para.classList.add("para1"))
+console.log(para.classList.remove("para1"))
+console.log(para.classList.toggle("para1"))  // If class is present it will remove it , if not present it will add it
+console.log(para.classList.contains("para1"))  // If class is present it will return true , if not present it will return false

@@ -12,4 +12,12 @@ h1 {
 
 p {
     background-color: #e6e6fa;
+
+}
+
+div {
+    height: 100px;
+    background-color: aquamarine;
+    margin: 2px;
+    border: 2px solid black
 }
