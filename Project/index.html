@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConvoX</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>ConvoX - The Currency Converter</h1>
+
+        <div class="box1">
+            <label for="amount">Enter Amount:</label>
+            <input type="text" id="amount" placeholder="Enter Amount">
+        </div>
+        <div class="middle">
+
+
+            <div class="box2">
+                <label for="from">From:</label>
+                <img src="https://flagsapi.com/US/flat/32.png">
+                <select name="from" id="from">
+                    <option value="USD">USD</option>
+                    <!-- <option value="INR">INR</option> -->
+                </select>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-arrow-right-left-icon lucide-arrow-right-left">
+                <path d="m16 3 4 4-4 4" />
+                <path d="M20 7H4" />
+                <path d="m8 21-4-4 4-4" />
+                <path d="M4 17h16" />
+            </svg>
+            <div class="box3">
+                <label for="to">To:</label>
+                <img src="https://flagsapi.com/IN/flat/32.png">
+                <select name="to" id="to">
+                    <!-- <option value="USD">INR</option>
+                    <option value="EUR">EUR</option>
+                    <option value="CAD">CAD</option>
+                    <option value="JPY">JPY</option>
+                    <option value="KRW">KRW</option> -->
+                </select>
+            </div>
+        </div>
+        <button id="btn">Get Exchange Value</button>
+        <p id="result"></p>
+    </div>
+    <p id="footer"></p>
+
+
+    </div>
+    <script src="codes.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
